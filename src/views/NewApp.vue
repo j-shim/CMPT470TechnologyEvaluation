@@ -1,5 +1,6 @@
 <template>
-  <div class="jumbotron">
+  <div>
+    <div class="jumbotron">
       <div class="container">
         <h2>Eliminate all X's!</h2>
         <p class="text-secondary">
@@ -19,6 +20,35 @@
         </div>
       </div>
     </div>
+
+    <div class="container">
+      <h2>Vue Directives: Binding</h2>
+      <br>
+      <h6>{{ screenshotTitle }}</h6>
+      <img src="../assets/vue-directives.png" alt="Screenshot of NewApp.vue">
+      <br>
+      <br>
+      <br>
+      <p>
+        In the screenshot above, <code>v-for</code> is a Vue directive for iterating over <code>idArrays</code>, where each item is aliased as <code>idArray</code>.
+        Note that another <code>v-for=&quot;id in idArray&quot;</code> directive is used inside the first <code>v-for</code> directive.
+      </p>
+      <br>
+      <p>
+        In addition to looping through arrays, we can also bind element attributes.
+        Note also that <code>v-bind:id</code> is a Vue directive to dynamically bind a value (id in this case) to the id attribute of the button element.
+      </p>
+      <br>
+      <p>
+        There is also a Vue directive for event binding, which is shown as <code>v-on:click</code> above.
+        This means that on clicking the button, <code>clicked(id)</code> will be invoked.
+      </p>
+      <br>
+      <p>
+        Finally, we can give the screenshot a title using <code>v-model</code> two-way binding between form input and app state: <input v-model="screenshotTitle">
+      </p>
+    </div>
+  </div>
 </template>
 
 <script>
@@ -31,7 +61,9 @@
                    ['puzzle-8', 'puzzle-9', 'puzzle-10', 'puzzle-11'],
                    ['puzzle-12', 'puzzle-13', 'puzzle-14', 'puzzle-15']],
         dimension: 4,
-        dimByDim: Math.pow(4, 2)
+        dimByDim: Math.pow(4, 2),
+
+        screenshotTitle: ''
       }
     },
     methods: {
