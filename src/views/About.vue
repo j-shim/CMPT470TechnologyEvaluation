@@ -43,9 +43,31 @@
         </p>
       </li>
     </ul>
+    <br/>
+    <p>To read more about Vue, please visit <a href="https://vuejs.org/">Vue's documentation page</a></p>
   </div>
 </template>
 
 <style scoped>
-  @import '../css/About.css';
+  @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+  * {
+      font-family: "Roboto", sans-serif;
+  }
+
+  .about {
+      padding: 10px 12%;
+  }
+
+  h2 {
+      margin: 10px 0px;
+  }
+
+  .feature-list {
+      list-style: none;
+  }
+
+  .feature {
+      font-style: bold;
+  }
 </style>
