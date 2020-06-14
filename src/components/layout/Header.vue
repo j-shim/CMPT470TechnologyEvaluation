@@ -11,13 +11,19 @@ export default {
 </script>
 
 <style scoped>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+    * {
+        font-family: "Roboto", sans-serif;
+    }
+
     .header {
         text-align: center;
         background: rgb(55, 55, 55);
     }
 
     h1 {
-        font-family: sans-serif;
         color: white;
+        padding: 20px;
     }
 </style>

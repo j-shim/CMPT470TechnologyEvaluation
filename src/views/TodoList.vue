@@ -52,5 +52,14 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
+  @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+  * {
+      font-family: "Roboto", sans-serif;
+  }
+
+  #todolist {
+    padding: 10px 12%;
+  }
 </style>

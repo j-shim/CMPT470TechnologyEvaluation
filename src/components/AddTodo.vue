@@ -1,8 +1,8 @@
 <template>
   <div>
       <form @submit="addTodo">
-          <input type="text" name="title" v-model="title" placeholder="Add Todo...">
-          <input type="submit" value="Submit">
+          <input class="enter-field" type="text" name="title" v-model="title" placeholder="Add Todo...">
+          <input class="submit-button" type="submit" value="Submit">
       </form>
   </div>
 </template>
@@ -34,5 +34,26 @@ export default {
 </script>
 
 <style scoped>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
+    * {
+        font-family: "Roboto", sans-serif;
+    }
+
+    .enter-field {
+        height: 20px;
+        margin: 0px 20px;
+    }
+
+    .submit-button {
+        border: 1px solid;
+        border-radius: 5px;
+        padding: 5px 10px;
+        font-size: 15px;
+    }
+
+    .submit-button:hover {
+        background-color: grey;
+        color: white;
+    }
 </style>
