@@ -12,7 +12,7 @@ Vue.use(VueRouter)
     component: TodoList
   },
   {
-    path: '/newapp',
+    path: '/puzzle',
     name: 'NewApp',
     component: NewApp
   },
