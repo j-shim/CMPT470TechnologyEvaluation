@@ -2,7 +2,7 @@
   <div id="app">
     <div id="nav">
       <router-link class="navItem" to="/">TodoList</router-link> |
-      <router-link class="navItem" to="/newapp">NewApp</router-link> | 
+      <router-link class="navItem" to="/puzzle">Puzzle</router-link> | 
       <router-link class="navItem" to="/about">About</router-link>
     </div>
     <router-view/>
